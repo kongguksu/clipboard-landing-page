@@ -1,0 +1,474 @@
+/********** MOBILE-FIRST FLOW ***********/
+/*----- Below 304px -----*/
+@media (max-width: 19em) {
+  /* header */
+  .header {
+    padding: 6rem 1rem 0 1rem;
+    margin-bottom: 6rem;
+  }
+
+  /* sections */
+  .section-snippets,
+  .section-workflow,
+  .section-access,
+  .section-featured {
+    margin-bottom: 10rem;
+  }
+}
+
+/*------------------------------------------- */
+
+/*----- Above 544px -----*/
+/* cta btns side-by-side */
+@media (min-width: 34em) {
+  .buttons-cta {
+    flex-direction: row;
+  }
+}
+
+/*----- Above 704px -----*/
+/* header bg to desktop ver. */
+/* snippets-info side-by-side */
+@media (min-width: 44em) {
+  /* general */
+  .tertiary-heading {
+    font-size: 1.4rem;
+  }
+  .tertiary-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-cta:link,
+  .btn-cta:visited {
+    width: 19.5rem;
+  }
+
+  /* header */
+  .header,
+  .main {
+    padding: 0 3rem;
+  }
+
+  .header {
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+    padding-top: 8rem;
+  }
+
+  /* snippets */
+  .img-computer {
+    width: 100%;
+    margin-left: -5rem;
+    margin-bottom: 0;
+  }
+  .snippets-info {
+    display: flex;
+    align-items: center;
+  }
+  .section-snippets .tertiary-heading,
+  .section-snippets .tertiary-text {
+    text-align: start;
+  }
+
+  /* access */
+  .section-access {
+    margin-bottom: 8rem;
+  }
+
+  /* workflow */
+  .icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3rem;
+    height: 3rem;
+  }
+  .icon-box {
+    margin-bottom: 3rem;
+  }
+  .workflow-info-3-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    column-gap: 1.15rem;
+  }
+  .section-workflow .tertiary-heading {
+    font-size: 1.3rem;
+  }
+  .section-workflow .tertiary-text {
+    padding: 0 0.2rem;
+  }
+}
+
+/*----- Above 800px -----*/
+/* featured logos side-by-side */
+/* footer links side-by-side */
+@media (min-width: 50em) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  /* general */
+  .primary-heading {
+    font-size: 2.25rem;
+  }
+  .secondary-heading {
+    font-size: 1.87rem;
+  }
+  .tertiary-heading {
+    font-size: 1.5rem;
+  }
+  .tertiary-text {
+    font-size: 1.01rem;
+  }
+  .btn-cta:link,
+  .btn-cta:visited {
+    width: 19.5rem;
+    padding: 1rem 0;
+  }
+
+  /* header */
+  .header,
+  .main {
+    padding: 0 4rem;
+  }
+  .header {
+    padding-top: 8rem;
+  }
+
+  /* sections */
+  .section-snippets,
+  .section-access,
+  .section-workflow,
+  .section-featured {
+    margin-bottom: 8rem;
+  }
+
+  /* snippets */
+  .img-computer {
+    margin-left: -5rem;
+  }
+
+  /* workflow */
+  .workflow-info-3-details {
+    column-gap: 2rem;
+  }
+  .section-workflow .tertiary-heading {
+    font-size: 1.4rem;
+  }
+  .section-workflow .tertiary-text {
+    font-size: 0.96rem;
+  }
+
+  /* featured */
+  .section-featured {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .featured-logo {
+    margin-bottom: 2rem;
+  }
+
+  /* footer */
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 2rem 3.5rem;
+  }
+  .social-btns {
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: start;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+
+    margin: 0;
+    padding: 0 2.5rem 0 1rem;
+  }
+  .social-btns {
+    gap: 1.5rem;
+  }
+
+  /* footer */
+  .footer-btn-contact {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .footer-btn-privacy {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .footer-btn-install {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    padding-left: 1.5rem;
+  }
+}
+
+/*----- Above 1000px -----*/
+/* button width smaller */
+/* start adding padding-right, left to primary/secondary text */
+@media (min-width: 62.5em) {
+  /* general */
+  .buttons-cta {
+    gap: 1rem;
+  }
+  .btn-cta:link,
+  .btn-cta:visited {
+    width: 14rem;
+    padding: 1.1rem 0;
+  }
+  .primary-text,
+  .secondary-text,
+  .section-cta .secondary-text {
+    padding: 0 7rem;
+  }
+
+  /* snippets */
+  .section-snippets {
+    margin-bottom: 11rem;
+  }
+  .img-computer {
+    width: 110%;
+    margin-left: -5.5rem;
+  }
+  .section-snippets .tertiary-text {
+    padding-right: 3rem;
+  }
+  .snippets-info-3-details {
+    margin-left: 3rem;
+  }
+
+  /* access */
+  .section-access {
+    margin-bottom: 6rem;
+  }
+
+  /* workflow */
+  .section-workflow {
+    margin-bottom: 6rem;
+  }
+
+  /* footer */
+  .footer {
+    padding: 1rem 5rem;
+  }
+}
+
+/*----- Above 1136px -----*/
+@media (min-width: 71em) {
+  .primary-text,
+  .secondary-text,
+  .section-cta .secondary-text {
+    padding: 0 12rem;
+  }
+
+  /* workflow */
+  .workflow-info {
+    padding: 0 5rem;
+  }
+
+  /* featured */
+  .section-featured {
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  /* footer */
+  .footer {
+    justify-content: space-between;
+
+    padding: 0 8rem;
+  }
+  .footer-nav {
+    column-gap: 3.5rem;
+    padding: 0;
+    margin: 0 3.5rem;
+  }
+  .footer-btn-install {
+    padding: 0;
+  }
+}
+
+/*----- Above 1440px -----*/
+/* Make everything into Desktop size */
+@media (min-width: 90em) {
+  /* general */
+  .primary-heading {
+    font-size: 2.8rem;
+  }
+  .secondary-heading {
+    font-size: 2.18rem;
+    margin-bottom: 1rem;
+  }
+  .tertiary-heading {
+    font-size: 1.45rem;
+  }
+  .primary-text {
+    font-size: 1.25rem;
+    padding: 0 17.9rem;
+  }
+  .secondary-text {
+    padding: 0 18.5rem;
+  }
+  .tertiary-text {
+    line-height: 1.7;
+  }
+
+  /* header */
+  .header {
+    margin-bottom: 9.2rem;
+  }
+
+  /* snippets */
+  .section-snippets {
+    margin-bottom: 9rem;
+  }
+  .snippets-summary {
+    margin-bottom: 5rem;
+  }
+  .snippets-img {
+    text-align: right;
+  }
+  .img-computer {
+    width: 116%;
+    margin-left: -6.5rem;
+  }
+  .snippets-info {
+    gap: 7.5rem;
+  }
+  .snippets-info-3-details {
+    width: 22rem;
+    margin-left: 0;
+  }
+  .snippets-detail {
+    text-align: right;
+  }
+  .snippets-detail:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .section-snippets .tertiary-text {
+    padding-right: 0;
+  }
+
+  /* access */
+  .section-access {
+    text-align: center;
+    margin-bottom: 4.5rem;
+  }
+  .img-devices {
+    width: 69%;
+    margin-top: 6rem;
+  }
+
+  /* workflow */
+  .section-workflow {
+    margin-bottom: 8rem;
+  }
+  .workflow-info {
+    padding: 0 7.5rem;
+  }
+  .workflow-info-3-details {
+    gap: 2rem;
+  }
+  .icon-box {
+    margin-bottom: 2.3rem;
+  }
+  .workflow-info-3-details .tertiary-heading {
+    font-size: 1.46rem;
+  }
+  .workflow-info-3-details .tertiary-text {
+    padding: 0;
+  }
+
+  /* featured */
+  .section-featured {
+    margin-left: 2.7rem;
+    margin-right: 2.7rem;
+  }
+  .logo-featured {
+    width: 100%;
+  }
+
+  /* cta */
+  .section-cta .secondary-text {
+    margin-left: 19rem;
+    margin-right: 19rem;
+    padding: 0;
+  }
+  .section-cta {
+    margin-bottom: 9.5rem;
+  }
+
+  /* footer */
+  .footer {
+    justify-content: flex-start;
+
+    padding: 0 11rem;
+  }
+
+  .footer-nav {
+    column-gap: 3.5rem;
+    padding: 0;
+    padding-right: 10rem;
+    margin-left: 8.5rem;
+    margin-right: 9.5rem;
+  }
+}
+
+/*----- Above 1520px -----*/
+@media (min-width: 95em) {
+  /* snippets */
+  .snippets-info-3-details {
+    width: 30rem;
+  }
+
+  /* footer */
+  .footer-nav {
+    padding-right: 15rem;
+  }
+}
+
+/*----- Above 1640px -----*/
+@media (min-width: 102.5em) {
+  /* snippets */
+  .snippets-info-3-details {
+    width: 35rem;
+  }
+
+  /* footer */
+  .footer {
+    gap: 7rem;
+  }
+  .footer-nav {
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
+    column-gap: 5rem;
+
+    padding-right: 5rem;
+    margin: 0;
+  }
+  .footer-btn-contact {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .footer-btn-privacy {
+    grid-column: 3/4;
+  }
+  .footer-btn-kit {
+    grid-column: 4/5;
+  }
+  .footer-btn-install {
+    grid-column: 5/6;
+  }
+}
