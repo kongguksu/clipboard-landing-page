@@ -43,7 +43,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <section class="section-snippets">
         <div class="snippets">
           <div class="snippets-summary">
@@ -55,11 +55,13 @@
             </p>
           </div>
           <div class="snippets-info">
-            <img
-              class="img-computer"
-              src="images/image-computer.png"
-              alt="Desktop computer with a check mark on the screen"
-            />
+            <div class="snippets-img">
+              <img
+                class="img-computer"
+                src="images/image-computer.png"
+                alt="Desktop computer with a check mark on the screen"
+              />
+            </div>
             <div class="snippets-info-3-details">
               <div class="snippets-detail">
                 <h3 class="tertiary-heading">Quick Search</h3>
@@ -213,17 +215,17 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <a class="btn-logo btn-logo--small" href="#">
         <img class="small-logo" src="images/logo.svg" alt="Clipboard logo"
       /></a>
-      <ul class="footer-nav">
-        <li><a class="footer-nav-btn" href="#">FAQs</a></li>
-        <li><a class="footer-nav-btn" href="#">Contact Us</a></li>
-        <li><a class="footer-nav-btn" href="#">Privacy Policy</a></li>
-        <li><a class="footer-nav-btn" href="#">Press Kit</a></li>
-        <li><a class="footer-nav-btn" href="#">Install Guide</a></li>
-      </ul>
+      <div class="footer-nav">
+        <a class="footer-nav-btn footer-btn-faq" href="#">FAQs</a>
+        <a class="footer-nav-btn footer-btn-contact" href="#">Contact Us</a>
+        <a class="footer-nav-btn footer-btn-privacy" href="#">Privacy Policy</a>
+        <a class="footer-nav-btn footer-btn-kit" href="#">Press Kit</a>
+        <a class="footer-nav-btn footer-btn-install" href="#">Install Guide</a>
+      </div>
       <div class="social-btns">
         <a class="social-btn" href="#">
           <i class="fa-brands fa-facebook-square"></i>
